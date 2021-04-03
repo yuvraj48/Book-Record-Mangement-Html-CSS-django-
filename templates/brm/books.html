@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Book Form</title>
+    <link rel ="stylesheet" href= "{% static 'css/books.css' %}">
+  </head>
+  <body>
+ <div id="header">
+   <h1>BOOK RECORD MANAGEMEN</h1>
+   <div id="nav">
+     <a href="/brm/view-book">view all</a>
+     <a href="/brm/new-book">Add new</a>
+     <a href="/brm/search-book">Search</a>
+     <a href="/brm/logout">Logout</a>
+
+     </div>
+   </div>
+     <div id ='main'>
+       <h2>add new book record</h2>
+       <form action="/brm/add" method='post'>
+         {% csrf_token %}
+          {{form}}
+         <input type="submit" value="add">
+         </form>
+     </div>
+  </body>
+</html>

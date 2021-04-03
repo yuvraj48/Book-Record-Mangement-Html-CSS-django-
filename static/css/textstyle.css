@@ -1,0 +1,42 @@
+body
+{
+  background-image: url('../images/light.jpg');
+  margin:0 0 80px 80px;
+}
+.heading{
+  background-color: red;
+  color:white;
+  text-align:center;
+  width:100%;
+}
+.heading h1{
+  background-color:navy;
+  color:white;
+
+}
+.questionblock{
+  padding:50px;
+  background-color:grey;
+  width:60%;
+  font-weigt:bold;
+}
+.que{
+  color:navy;
+  text-shadow: red;
+}
+.que h2{
+  background-color:red;
+  color:white;
+  padding:10px
+}
+.options{
+  color:blue;
+  margin-left: 20px;
+  paddng:5px:
+  background-color:lightpink;
+}
+.submit input{
+  color:green;
+  width:60px;
+  margin-right:10px;
+}
